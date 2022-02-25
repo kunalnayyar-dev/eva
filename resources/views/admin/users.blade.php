@@ -37,6 +37,9 @@
                                             <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                                                 User Type
                                             </th>
+                                            <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                                Created At
+                                            </th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -57,6 +60,9 @@
                                                     </td>
                                                     <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                                         {{ ucfirst($user->user_type) }}
+                                                    </td>
+                                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                                        {{ \Carbon\Carbon::parse($user['created_at'])->format('M d, Y g:i A') }}
                                                     </td>
                                                 </tr>
                                             @endforeach

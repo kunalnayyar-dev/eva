@@ -17,7 +17,7 @@ class UserObserver
         activity('user')
             ->performedOn($user)
             ->causedBy($user)
-            //->withProperties(['customProperty' => 'customValue'])
+            ->withProperties([['user_name' => $user->first_name.' '.$user->last_name]])
             ->log( $user->first_name.' '.$user->last_name.' is new user registered');
     }
 
@@ -37,6 +37,7 @@ class UserObserver
         activity('user')
             ->performedOn($user)
             ->causedBy($user)
+            ->withProperties([['user_name' => $user->first_name.' '.$user->last_name]])
             ->log( $message);
     }
 
@@ -51,7 +52,7 @@ class UserObserver
         activity('user')
             ->performedOn($user)
             ->causedBy($user)
-            //->withProperties(['customProperty' => 'customValue'])
+            ->withProperties([['user_name' => $user->first_name.' '.$user->last_name]])
             ->log( $user->first_name.' '.$user->last_name.' user deleted');
     }
 

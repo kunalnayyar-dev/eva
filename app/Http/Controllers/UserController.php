@@ -7,6 +7,7 @@ use App\Rules\MatchOldPassword;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Spatie\Activitylog\Models\Activity;
 
 class UserController extends Controller
 {

@@ -14,7 +14,7 @@ class AdminController extends Controller
     }
 
     public function allactivities(){
-        $activities = Activity::with(['user'])->orderByDesc('created_at')->get();
+        $activities = Activity::orderByDesc('created_at')->get()->toArray();
         return view('admin.activities',compact('activities'));
     }
 }

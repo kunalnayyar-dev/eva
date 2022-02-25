@@ -37,7 +37,7 @@ class AuthenticatedSessionController extends Controller
         activity('user')
             ->performedOn($user)
             ->causedBy($user)
-            //->withProperties(['customProperty' => 'customValue'])
+            ->withProperties([['user_name' => $user->first_name.' '.$user->last_name]])
             ->log( $user->first_name.' '.$user->last_name.' is login');
 
         return redirect()->intended(RouteServiceProvider::HOME);
@@ -55,7 +55,7 @@ class AuthenticatedSessionController extends Controller
         activity('user')
             ->performedOn($user)
             ->causedBy($user)
-            //->withProperties(['customProperty' => 'customValue'])
+            ->withProperties([['user_name' => $user->first_name.' '.$user->last_name]])
             ->log( $user->first_name.' '.$user->last_name.' is logout');
 
         Auth::guard('web')->logout();

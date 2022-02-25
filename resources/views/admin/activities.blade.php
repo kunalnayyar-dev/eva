@@ -41,17 +41,17 @@
                                                 <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
                                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ ($key+1) }}</td>
                                                     <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                        {{ ucfirst($activity->log_name) }}
+                                                        {{ ucfirst($activity['log_name']) }}
                                                     </td>
                                                     <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                        {{ ucfirst($activity->user->first_name.' '.$activity->user->last_name) }}
+                                                        {{ isset($activity['properties'][0]['user_name']) ? $activity['properties'][0]['user_name'] : '' }}
                                                     </td>
                                                     <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                        {{ ucfirst($activity->description) }}
+                                                        {{ ucfirst($activity['description']) }}
                                                     </td>
 
                                                     <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                        {{ $activity->created_at }}
+                                                        {{ \Carbon\Carbon::parse($activity['created_at'])->format('M d, Y g:i A', true) }}
                                                     </td>
 
                                                 </tr>
