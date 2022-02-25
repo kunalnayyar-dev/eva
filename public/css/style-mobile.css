@@ -1,0 +1,145 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #hero .hero-container {
+        max-height: 200px;
+    }
+
+    #hero h1 {
+        font-size: 29px;
+        line-height: 200px;
+    }
+
+    #hero-heading h3 {
+        font-size: 24px;
+    }
+
+    #offer-section .new-offer {
+        flex-wrap: wrap-reverse;
+    }
+
+    #offer-section .new-offer .content h1 {
+        font-size: 47px;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #offer-section .new-offer > .content p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #offer-section .new-offer > .content button {
+        text-transform: capitalize;
+    }
+
+    #offer-section .new-offer > .content {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    #offer-section .offer-content h3 {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #offer-section .offer-content button {
+        text-transform: capitalize;
+    }
+
+    #offer-section .offer-content p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #offer-section .new-offer > .content > span {
+        display: none;
+    }
+
+    .offer-container {
+        flex-direction: column;
+
+    }
+
+    #offer-section .offer-image {
+        max-height: 400px;
+    }
+
+    #offer-section .offer-content, #offer-section .offer-image {
+        width: 100%;
+    }
+
+    #offer-section .offer-content:first-child {
+        order: 4
+    }
+
+    #offer-section .offer-image:first-child {
+        order: 3
+    }
+
+    #offer-section .offer-content:last-child {
+        order: 1
+    }
+
+    #offer-section .offer-image:last-child {
+        order: 2
+    }
+
+    #offer-section .offer-content {
+        margin-bottom: 20px;
+        padding: 9%;
+    }
+
+    #offer-section .offer-content h3 {
+        font-size: 47px;
+    }
+
+    #faqs {
+        padding: 10% 0%;
+    }
+
+    #faqs h1 {
+        font-size: 29px;
+    }
+
+    #faqs .accordion-button {
+        font-size: 18px;
+    }
+
+    #full-height .content h1 {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    #full-height > div {
+        background-position: left;
+    }
+
+    #full-height .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .full-height .content button {
+        font-size: 19px;
+    }
+
+    #header img {
+        max-width: 60px;
+    }
+
+    #header div {
+        padding: 20px 0px;
+    }
+
+    #hero-heading .hero-container {
+        padding: 20px 0px;
+    }
+    #hero-heading .hero-container h3 {
+        width: 80%;
+        font-size: 21px;
+        display: block;
+        margin: 0px auto;
+    }
+}
