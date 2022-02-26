@@ -1,11 +1,11 @@
 @font-face {
     font-family: "National2Narrow-Medium";
-    src: url("../fonts/National2Narrow-Medium.otf") format("woff");
+    src: url("/fonts/National2Narrow-Medium.otf") format("woff");
 }
 
 @font-face {
     font-family: "FoundersGroteskText-Regular";
-    src: url("../fonts/FoundersGroteskText-Regular.otf") format("woff");
+    src: url("/fonts/FoundersGroteskText-Regular.otf") format("woff");
 }
 .container {
     width: 90%;
@@ -67,7 +67,7 @@ p {
 }
 
 #hero .hero-container {
-    background: url("../images/header.jpg") no-repeat;
+    background: url('/images/header.jpg') no-repeat;
     background-size: cover;
     margin: auto;
     max-height: 324px;
@@ -133,6 +133,7 @@ p {
     padding: 14px;
     font-size: 16px;
     letter-spacing: 1px;
+    background: white;
     font-family: "FoundersGroteskText-Regular";
 }
 
@@ -226,12 +227,12 @@ p {
 }
 
 .accordion-button::after {
-    background-image: url("../images/plus-icon.png");
+    background-image: url("/images/plus-icon.png");
     background-size: 12px;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("../images/plus-icon.png");
+    background-image: url("/images/plus-icon.png");
     transform: rotate(45deg);
 }
 
@@ -247,7 +248,7 @@ p {
 }
 
 #full-height > div {
-    background: url("../images/footer-banner.jpg") no-repeat;
+    background: url("/images/footer-banner.jpg") no-repeat;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -370,21 +371,13 @@ p {
         width: 100%;
     }
 
-    #offer-section .offer-content:first-child {
-        order: 4
-    }
+    #offer-section .flex-order:nth-of-type(1) { order: 2 }
 
-    #offer-section .offer-image:first-child {
-        order: 3
-    }
+    #offer-section .flex-order:nth-of-type(2) { order: 1 }
 
-    #offer-section .offer-content:last-child {
-        order: 1
-    }
+    #offer-section .flex-order:nth-of-type(3) { order: 4 }
 
-    #offer-section .offer-image:last-child {
-        order: 2
-    }
+    #offer-section .flex-order:nth-of-type(4) { order: 3 }
 
     #offer-section .offer-content {
         margin-bottom: 20px;

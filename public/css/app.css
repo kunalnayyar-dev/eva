@@ -835,9 +835,6 @@ select {
 .flex-col {
   flex-direction: column;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-}
 .items-center {
   align-items: center;
 }
@@ -1203,6 +1200,393 @@ select {
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+@font-face {
+    font-family: "National2Narrow-Medium";
+    src: url("/fonts/National2Narrow-Medium.otf") format("woff");
+}
+@font-face {
+    font-family: "FoundersGroteskText-Regular";
+    src: url("/fonts/FoundersGroteskText-Regular.otf") format("woff");
+}
+.container {
+    width: 90%;
+}
+.mv-5 {
+    margin: 5% 0%;
+}
+.mt-5 {
+    margin-top: 10%;
+}
+.mt-8 {
+    margin-top: 8%;
+}
+h1, p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+h1, h3, h2 {
+    font-family: "National2Narrow-Medium";
+}
+p {
+    font-family: "FoundersGroteskText-Regular";
+}
+.primary-color {
+    color: #4F857C;
+}
+.primary-bg-color {
+    background: #4F857C;
+}
+.primary-button {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 10px;
+    color: white;
+    font-family: "FoundersGroteskText-Regular";
+}
+#header div {
+    padding: 25px 0px;
+}
+#header img {
+    display: block;
+    margin: 0px auto;
+    max-width: 100px;
+}
+#hero .hero-container {
+    background: url('/images/header.jpg') no-repeat;
+    background-size: cover;
+    margin: auto;
+    max-height: 324px;
+    background-position: center;;
+}
+#hero h1 {
+    font-size: 87px;
+    color: white;
+    line-height: 324px;
+    text-align: center;
+}
+#hero-heading h3 {
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+}
+#offer-section .new-offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+#offer-section .new-offer > .content > span {
+    position: absolute;
+    left: -10px;
+    background: rgb(71,100,124);
+    padding: 2px 69px;
+    font-size: 20px;
+    color: white;
+    font-family: "National2Narrow-Medium";
+}
+#offer-section .new-offer > .content h1 {
+    margin-top: 14%;
+    width: 80%;
+}
+#offer-section .new-offer > .content {
+    position: relative;
+    padding: 30px;
+    padding-top: 1%;
+    width: 31%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between
+}
+#offer-section .new-offer > .content p {
+    color: white;
+}
+#offer-section .new-offer > .content button {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 14px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: white;
+    font-family: "FoundersGroteskText-Regular";
+}
+#offer-section .new-offer img {
+    width: 100%;
+}
+#offer-section .new-offer h1 {
+    font-size: 68px;
+    color: white;
+}
+#offer-section .new-offer .content > p {
+    font-size: 18px;
+    flex-grow: 3;
+    margin-top: 15px;
+    width: 80%;
+}
+.offer-container {
+    display: flex;
+    justify-content:space-between;
+}
+#offer-section .offer-image {
+    margin-right: 1%;
+    flex: 1;
+    width: 24.3%;
+}
+#offer-section .offer-content {
+    flex: 1;
+    background: #F6EBD8;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-right: 1%;
+    width: 24.3%;
+}
+#offer-section .offer-image:last-child {
+    margin-right: 0%;
+}
+#offer-section .offer-content p {
+    flex-grow: 3;
+    font-size: 18px;
+    width: 78%;
+    margin-bottom: 50px;
+    line-height: 24px;
+    margin-top: 10px;
+
+}
+#offer-section .offer-content button {
+    font-size: 14px;
+    padding: 14px 10px;
+}
+#offer-section .offer-content h3 {
+    font-size: 58px;
+    line-height: 58px;
+}
+#offer-section .offer-image img {
+    width: 100%;
+}
+#faqs {
+    background: #47647C;
+    padding: 8%;
+}
+#faqs h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+#faqs .accordion-item {
+    background: transparent !important;
+    border-bottom: 0.2px white solid;
+}
+#faqs .accordion-button {
+    background: transparent !important;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    padding: 25px 0px;
+}
+.accordion-button::after {
+    background-image: url("/images/plus-icon.png");
+    background-size: 12px;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("/images/plus-icon.png");
+    transform: rotate(45deg);
+}
+.accordion-button:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+.accordion-body {
+    color: white;
+    font-family: "FoundersGroteskText-Regular";
+}
+#full-height > div {
+    background: url("/images/footer-banner.jpg") no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 7%;
+}
+#full-height div button {
+    width: 100%;
+    padding: 16px;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+#full-height .content h1 {
+    font-size: 52px;
+    margin-bottom: 42px;
+}
+#footer div {
+    padding: 25px 0px;
+}
+#footer img {
+    display: block;
+    margin: 0px auto;
+    max-width: 100px;
+}
+.full-height-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.carousel-indicators {
+     justify-content: left;
+     margin-left: 3%;
+ }
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+}
+.carousel-indicators .active{
+    background-color: #4f857c;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #hero .hero-container {
+        max-height: 200px;
+    }
+
+    #hero h1 {
+        font-size: 29px;
+        line-height: 200px;
+    }
+
+    #hero-heading h3 {
+        font-size: 24px;
+    }
+
+    #offer-section .new-offer {
+        flex-wrap: wrap-reverse;
+    }
+
+    #offer-section .new-offer .content h1 {
+        font-size: 47px;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #offer-section .new-offer > .content p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #offer-section .new-offer > .content button {
+        text-transform: capitalize;
+    }
+
+    #offer-section .new-offer > .content {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    #offer-section .offer-content h3 {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #offer-section .offer-content button {
+        text-transform: capitalize;
+    }
+
+    #offer-section .offer-content p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #offer-section .new-offer > .content > span {
+        display: none;
+    }
+
+    .offer-container {
+        flex-direction: column;
+
+    }
+
+    #offer-section .offer-image {
+        max-height: 400px;
+    }
+
+    #offer-section .offer-content, #offer-section .offer-image {
+        width: 100%;
+    }
+
+    #offer-section .flex-order:nth-of-type(1) { order: 2 }
+
+    #offer-section .flex-order:nth-of-type(2) { order: 1 }
+
+    #offer-section .flex-order:nth-of-type(3) { order: 4 }
+
+    #offer-section .flex-order:nth-of-type(4) { order: 3 }
+
+    #offer-section .offer-content {
+        margin-bottom: 20px;
+        padding: 9%;
+    }
+
+    #offer-section .offer-content h3 {
+        font-size: 47px;
+    }
+
+    #faqs {
+        padding: 10% 0%;
+    }
+
+    #faqs h1 {
+        font-size: 29px;
+    }
+
+    #faqs .accordion-button {
+        font-size: 18px;
+    }
+
+    #full-height .content h1 {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    #full-height > div {
+        background-position: left;
+    }
+
+    #full-height .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .full-height .content button {
+        font-size: 19px;
+    }
+
+    #header img {
+        max-width: 60px;
+    }
+
+    #header div {
+        padding: 20px 0px;
+    }
+
+    #hero-heading .hero-container {
+        padding: 20px 0px;
+    }
+    #hero-heading .hero-container h3 {
+        width: 80%;
+        font-size: 21px;
+        display: block;
+        margin: 0px auto;
+    }
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
