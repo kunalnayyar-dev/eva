@@ -1,5 +1,11 @@
 ## Eva Dev Challenge ##
 
+Dev Requirements
+1. PHP V8.0.*
+2. Mysql
+3. Composer 2.0.*
+4. Node 12.14^
+
 To run the project on local
 1. Copy the .env.example to .env file
     1. `php artisan generate:key`
